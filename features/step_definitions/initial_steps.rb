@@ -2,7 +2,7 @@ require 'board'
 require 'driver'
 
 Given(/^the board is connected$/) do
-  @board ||= Board.new
+  @board ||= Ita::Board.new
 end
 
 When(/^I issue the led "([^"]*)" command$/) do |command|
