@@ -1,6 +1,6 @@
 # Intro
 
-Playing around with Arduino Uno
+Playing around with Arduino Uno. See blog post at https://ihassin.wordpress.com/2015/07/07/arduino-programming-using-ruby-cucumber-rspec.
 
 # git
 
