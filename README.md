@@ -13,3 +13,7 @@ git@github.com:ihassin/arduino.git
 ```
 rake	# runs rSpec and Cucumber
 ```
+
+# Serial ports
+
+Mine is on "/dev/tty.usbmodem1411", and the highest speed I can get out of SerialPort it 57600

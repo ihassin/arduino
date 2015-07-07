@@ -5,9 +5,9 @@ Feature:
     Given the board is connected
 
   Scenario: Turn led on
-    When I issue the led "on" command
-    Then the led is "on"
+    When I issue the led "On" command
+    Then the led is "On"
 
   Scenario: Turn led off
-    When I issue the led "off" command
-    Then the led is "off"
+    When I issue the led "Off" command
+    Then the led is "Off"
