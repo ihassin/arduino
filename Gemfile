@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'arduino'
+gem 'arduino_firmata'
 gem 'simplecov',          :require => false, :group => [:test, :staging]
 gem 'rspec',              :group => [:test, :staging]
 gem 'rspec-mocks',        :group => [:test, :staging]

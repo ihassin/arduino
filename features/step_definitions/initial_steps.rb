@@ -1,20 +1,17 @@
-require 'board'
 require 'driver'
 
 Given(/^the board is connected$/) do
-  @board ||= Ita::Board.new
+  @driver ||= Driver.new
 end
 
 When(/^I issue the led "([^"]*)" command$/) do |command|
   case command
     when 'on'
-      @board.led = ON
+      value = ON
     when 'off'
-      @board.led = OFF
-    when 'blink'
-      @board.led = BLINK
+      value = OFF
   end
-  Driver.set_led_state @board.led
+  expect(@driver.set_led_state value).to be true
 end
 
 Then(/^the led is "([^"]*)"$/) do |state|
@@ -23,9 +20,6 @@ Then(/^the led is "([^"]*)"$/) do |state|
       my_state = ON
     when 'off'
       my_state = OFF
-    when 'blinking', 'blink'
-      my_state = BLINKING
   end
-  expect(my_state).to eq @board.led
-  expect(Driver.get_led_state).to eq my_state
+  expect(@driver.get_led_state).to eq my_state
 end

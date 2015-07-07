@@ -11,7 +11,3 @@ Feature:
   Scenario: Turn led off
     When I issue the led "off" command
     Then the led is "off"
-
-  Scenario: Blink led
-    When I issue the led "blink" command
-    Then the led is "blinking"
