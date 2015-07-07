@@ -26,7 +26,7 @@ class Driver
     result = @arduino.digital_write(LED_PIN, state)
   rescue Exception => ex
     @state = state
-    true
+    state
   end
 
   def get_led_state
