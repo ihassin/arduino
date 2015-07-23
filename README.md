@@ -1,6 +1,7 @@
 # Intro
 
-Playing around with Arduino Uno. See blog post at https://ihassin.wordpress.com/2015/07/07/arduino-programming-using-ruby-cucumber-rspec.
+Arduino Hello World using rSpec and Cucumber from Ruby.
+See blog post [here](https://ihassin.wordpress.com/2015/07/07/arduino-programming-using-ruby-cucumber-rspec).
 
 # git
 
