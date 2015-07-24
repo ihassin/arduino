@@ -1,5 +1,5 @@
 Feature:
-  Assure board led is responsive
+  Assure board led is responsive (needs arduino_firmata loaded on the board)
 
   Background:
     Given the board is connected
